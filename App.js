@@ -3,7 +3,17 @@ import { SafeAreaView, Text, View } from "react-native";
 import styles from "./src/Styles/main";
 import LoginScreen from "./src/Components/LoginForm";
 import DashboardScreen from "./src/Components/Dashboard/dashboard";
+<<<<<<< HEAD
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { NavigationContainer } from "@react-navigation/native";
+import { FontAwesome5 } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
+import * as SplashScreen from "expo-splash-screen";
+=======
+import Header from "./src/Components/Header/Header";
 
+>>>>>>> 38d4bff3e6451b9cc96760e7792bc891dfc8b76f
 export default function App() {
   // SplashScreen.hideAsync()
   //   .then((hidden) => {
@@ -14,9 +24,75 @@ export default function App() {
   //   });
   const Tab = createBottomTabNavigator();
   return (
+<<<<<<< HEAD
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <StatusBar style="auto" />
+        {/* <DashboardScreen /> */}
+
+        <Tab.Navigator
+          screenOptions={{
+            headerShown: true,
+            headerStyle: {
+              backgroundColor: "skyblue",
+              borderBottomColor: "green",
+              borderBottomWidth: 3,
+            },
+            tabBarStyle: { backgroundColor: "skyblue" },
+            //tabBarLabelStyle: { color: "black" },
+            tabBarActiveTintColor: "green",
+            tabBarInactiveTintColor: "black",
+          }}
+        >
+          <Tab.Screen
+            name="Dashboard"
+            options={{
+              tabBarIcon: ({ size, color }) => {
+                return (
+                  <FontAwesome5 name="list-alt" size={size} color={color} />
+                );
+              },
+            }}
+          >
+            {(props) => <DashboardScreen {...props} />}
+          </Tab.Screen>
+          <Tab.Screen
+            name="Update Income"
+            options={{
+              tabBarIcon: ({ size, color }) => {
+                return (
+                  <MaterialIcons
+                    name="playlist-add"
+                    size={size}
+                    color={color}
+                  />
+                );
+              },
+            }}
+          >
+            {(props) => <DashboardScreen {...props} />}
+          </Tab.Screen>
+          <Tab.Screen
+            name="Invest"
+            options={{
+              tabBarIcon: ({ size, color }) => {
+                return (
+                  <Ionicons name="settings-outline" size={24} color="black" />
+                );
+              },
+            }}
+          >
+            {(props) => <DashboardScreen {...props} />}
+          </Tab.Screen>
+        </Tab.Navigator>
+      </SafeAreaView>
+    </NavigationContainer>
+=======
     <View style={styles.container}>
+      <Header/>
       <DashboardScreen />
       <StatusBar style="auto" />
     </View>
+>>>>>>> 38d4bff3e6451b9cc96760e7792bc891dfc8b76f
   );
 }
