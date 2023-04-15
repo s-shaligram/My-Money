@@ -13,7 +13,6 @@ import * as SplashScreen from "expo-splash-screen";
 
 import Header from "./src/Components/Header/Header";
 
-
 export default function App() {
   // SplashScreen.hideAsync()
   //   .then((hidden) => {
@@ -24,7 +23,6 @@ export default function App() {
   //   });
   const Tab = createBottomTabNavigator();
   return (
-
     <NavigationContainer>
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
@@ -87,12 +85,5 @@ export default function App() {
         </Tab.Navigator>
       </SafeAreaView>
     </NavigationContainer>
-
-    <View style={styles.container}>
-      <Header/>
-      <DashboardScreen />
-      <StatusBar style="auto" />
-    </View>
-
   );
 }
