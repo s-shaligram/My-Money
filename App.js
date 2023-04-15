@@ -27,7 +27,7 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
         {/* <DashboardScreen /> */}
-
+        <Header />
         <Tab.Navigator
           screenOptions={{
             headerShown: true,
