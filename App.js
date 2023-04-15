@@ -3,17 +3,16 @@ import { SafeAreaView, Text, View } from "react-native";
 import styles from "./src/Styles/main";
 import LoginScreen from "./src/Components/LoginForm";
 import DashboardScreen from "./src/Components/Dashboard/dashboard";
-<<<<<<< HEAD
+
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import * as SplashScreen from "expo-splash-screen";
-=======
+
 import Header from "./src/Components/Header/Header";
 
->>>>>>> 38d4bff3e6451b9cc96760e7792bc891dfc8b76f
 export default function App() {
   // SplashScreen.hideAsync()
   //   .then((hidden) => {
@@ -24,7 +23,6 @@ export default function App() {
   //   });
   const Tab = createBottomTabNavigator();
   return (
-<<<<<<< HEAD
     <NavigationContainer>
       <SafeAreaView style={styles.container}>
         <StatusBar style="auto" />
@@ -87,12 +85,5 @@ export default function App() {
         </Tab.Navigator>
       </SafeAreaView>
     </NavigationContainer>
-=======
-    <View style={styles.container}>
-      <Header/>
-      <DashboardScreen />
-      <StatusBar style="auto" />
-    </View>
->>>>>>> 38d4bff3e6451b9cc96760e7792bc891dfc8b76f
   );
 }
