@@ -3,7 +3,7 @@ import { SafeAreaView, Text, View } from "react-native";
 import styles from "./src/Styles/main";
 import LoginScreen from "./src/Components/LoginForm";
 import DashboardScreen from "./src/Components/Dashboard/dashboard";
-
+import BudgetScreen from "./src/Components/Budget/budget";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { FontAwesome5 } from "@expo/vector-icons";
@@ -69,7 +69,7 @@ export default function App() {
               },
             }}
           >
-            {(props) => <DashboardScreen {...props} />}
+            {(props) => <BudgetScreen {...props} />}
           </Tab.Screen>
 
           <Tab.Screen
