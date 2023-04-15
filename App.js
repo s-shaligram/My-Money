@@ -54,6 +54,7 @@ export default function App() {
           >
             {(props) => <DashboardScreen {...props} />}
           </Tab.Screen>
+
           <Tab.Screen
             name="Update Income"
             options={{
@@ -70,6 +71,7 @@ export default function App() {
           >
             {(props) => <DashboardScreen {...props} />}
           </Tab.Screen>
+
           <Tab.Screen
             name="Invest"
             options={{
@@ -82,6 +84,7 @@ export default function App() {
           >
             {(props) => <DashboardScreen {...props} />}
           </Tab.Screen>
+          
         </Tab.Navigator>
       </SafeAreaView>
     </NavigationContainer>
