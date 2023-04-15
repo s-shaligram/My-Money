@@ -17,7 +17,7 @@ const DashboardScreen = () => {
         <Text style={styles.amount}>-${expenses}</Text>
       </View>
       <View style={styles.card}>
-        <Text style={styles.title}>Savings Goal</Text>
+        <Text style={styles.title}>Savings</Text>
         <Text style={styles.amount}>${savingsGoal}</Text>
       </View>
     </ScrollView>
