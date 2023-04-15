@@ -1,11 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import LoginScreen from "./src/Components/LoginForm";
+import DashboardScreen from "./src/Components/Dashboard/dashboard";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>My-Money by US</Text>
-      <Text>Welcome</Text>
+      <DashboardScreen />
       <StatusBar style="auto" />
     </View>
   );

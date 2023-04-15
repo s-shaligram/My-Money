@@ -1,12 +1,7 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import firebase from "react-native-firebase";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+const config = {
+  // Replace with your Firebase config details
   apiKey: "AIzaSyA6iT9h7ArpxWPbNKfQ1KbBxPKPKLJHAek",
   authDomain: "info6129-f25af.firebaseapp.com",
   projectId: "info6129-f25af",
@@ -16,6 +11,6 @@ const firebaseConfig = {
   measurementId: "G-6TDY7LSSCH",
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+firebase.initializeApp(config);
+
+export default firebase;
