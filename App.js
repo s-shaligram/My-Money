@@ -64,7 +64,7 @@ export default function App() {
                   <MaterialIcons
                     name="money"
                     size={size}
-                    color={color}
+                    color="red"
                   />
                 );
               },
