@@ -4,6 +4,7 @@ import styles from "./src/Styles/main";
 import LoginScreen from "./src/Components/LoginForm";
 import DashboardScreen from "./src/Components/Dashboard/dashboard";
 import BudgetScreen from "./src/Components/Budget/budget";
+import InvestScreen from "./src/Components/Invest/Invest";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { FontAwesome5 } from "@expo/vector-icons";
@@ -61,7 +62,7 @@ export default function App() {
               tabBarIcon: ({ size, color }) => {
                 return (
                   <MaterialIcons
-                    name="playlist-add"
+                    name="coins"
                     size={size}
                     color={color}
                   />
@@ -77,14 +78,14 @@ export default function App() {
             options={{
               tabBarIcon: ({ size, color }) => {
                 return (
-                  <Ionicons name="settings-outline" size={24} color="black" />
+                  <Ionicons name="money-check-dollar" size={24} color="black" />
                 );
               },
             }}
           >
-            {(props) => <DashboardScreen {...props} />}
+            {(props) => <InvestScreen {...props} />}
           </Tab.Screen>
-          
+
         </Tab.Navigator>
       </SafeAreaView>
     </NavigationContainer>
