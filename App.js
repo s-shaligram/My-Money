@@ -15,13 +15,13 @@ import * as SplashScreen from "expo-splash-screen";
 import Header from "./src/Components/Header/Header";
 
 export default function App() {
-  // SplashScreen.hideAsync()
-  //   .then((hidden) => {
-  //     console.log("Hidden:", hidden);
-  //   })
-  //   .catch((error) => {
-  //     console.log("Hide error:", error);
-  //   });
+  SplashScreen.hideAsync()
+    .then((hidden) => {
+      console.log("Hidden:", hidden);
+    })
+    .catch((error) => {
+      console.log("Hide error:", error);
+    });
   const Tab = createBottomTabNavigator();
   return (
     <NavigationContainer>
