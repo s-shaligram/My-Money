@@ -62,7 +62,7 @@ export default function App() {
               tabBarIcon: ({ size, color }) => {
                 return (
                   <MaterialIcons
-                    name="coins"
+                    name="money"
                     size={size}
                     color={color}
                   />
@@ -78,7 +78,7 @@ export default function App() {
             options={{
               tabBarIcon: ({ size, color }) => {
                 return (
-                  <Ionicons name="money-check-dollar" size={24} color="black" />
+                  <FontAwesome5 name="coins" size={size} color="blue" />
                 );
               },
             }}
