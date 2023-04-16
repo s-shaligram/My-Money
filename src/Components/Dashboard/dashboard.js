@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Text, View, ScrollView } from "react-native";
 import styles from "./style";
 const DashboardScreen = () => {
-  const [income, setIncome] = useState(0);
-  const [expenses, setExpenses] = useState(0);
-  const [savingsGoal, setSavingsGoal] = useState(0);
+  const [income, setIncome] = useState(50000);
+  const [expenses, setExpenses] = useState(23000);
+  const [savingsGoal, setSavingsGoal] = useState(28000);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
