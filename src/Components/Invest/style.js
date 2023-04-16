@@ -1,13 +1,24 @@
 import { StyleSheet } from "react-native";
+
 const styles = StyleSheet.create({
-  
-  
-  title: {
-    fontSize: 20,
-    fontWeight: "bold",
-    marginBottom: 10,
-    marginTop: 5,
+  container: {
+    alignSelf: "stretch",
+    backgroundColor: "#fff",
+    margin: 10,
+    padding: 10,
+    borderRadius: 7,
+    borderWidth: 1,
+    borderColor: "#bcbcbc",
   },
-  
+  title: {
+    fontSize: 17,
+    fontWeight: "bold",
+    color: "#333",
+  },
+  text: {
+    fontSize: 13,
+    color: "#777",
+  },
 });
+
 export default styles;
